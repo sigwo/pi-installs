@@ -58,4 +58,4 @@ Terminal=false
 StartupNotify=true" >> ~/Desktop/BLOCK.desktop
 chmod 755 ~/Desktop/BLOCK.desktop
 echo
-echo "*** Installation finished - you can now run the wallet by double clicking the icon on the desktop ***"
+echo "*** Installation finished - you can now run the wallet by double clicking the icon on the desktop. ***"
