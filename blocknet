@@ -1,0 +1,61 @@
+#!/bin/bash
+# **************************************************************************
+# Blocknet RPi installer
+# blocknet-qt + desktop icon
+# Maintained by : sigwo
+# **************************************************************************
+
+# install dependencies
+echo "*** Installing dependencies ***"
+echo
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get install -y qt4-qmake libqt4-dev libminiupnpc-dev libdb++-dev libdb-dev libcrypto++-dev libqrencode-dev libboost-all-dev build-essential libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libssl-dev ufw git
+echo
+echo "*** Cloning BLOCK repo ***"
+echo
+git clone https://github.com/atcsecure/blocknet.git block	
+cd block
+qmake
+make
+echo
+# Create the firewall rules
+# Replace the port with the port required for either P2P or rpc port for local mining
+echo "*** Create firewall rules ***"
+sudo ufw allow 51717
+sudo ufw allow 51716
+sudo ufw allow 2210
+sudo ufw allow 5950
+sudo ufw allow 6050
+sudo ufw allow 3000
+sudo ufw enable
+echo
+# create config file and randomize the password
+echo "*** Creating configuration file with randomized password ***"
+echo
+mkdir ~/.blocknet 
+rm -f blocknet.conf
+echo "rpcuser=user
+rpcpassword=$(cat /dev/urandom | tr -cd '[:alnum:]' | head -c32)
+rpcallowip = 127.0.0.1
+server = 1
+daemon = 1
+listen = 1" >> ~/.blocknet/blocknet.conf
+echo
+echo
+# create desktop shortcut for BLOCK
+echo "*** Creating desktop icon ***"
+echo
+wget http://blocknet.co/wp-content/uploads/icon_blk.png -O ~/.blocknet/blocknet.png
+echo "[Desktop Entry]
+Name=Blocknet
+Type=Application
+Comment=BLOCK
+Categories=Application
+Exec=/home/pi/block/blocknet-qt
+Icon=/home/pi/.block/blocknet.png
+Terminal=false
+StartupNotify=true" >> ~/Desktop/BLOCK.desktop
+chmod 755 ~/Desktop/BLOCK.desktop
+echo
+echo "*** Installation finished - you can now run the wallet by double clicking the icon on the desktop ***"
