@@ -1,1 +1,1 @@
-https://gist.githubusercontent.com/sigwo/54c26f01eed1c71da12638e26df6968e/raw/169e7d022cc25bfcb692fe3dcad0f0f62b694002/build_bitcoindark.sh;chmod +x build_bitcoindark.sh;sh ./build_bitcoindark.sh
+wget https://gist.githubusercontent.com/sigwo/54c26f01eed1c71da12638e26df6968e/raw/169e7d022cc25bfcb692fe3dcad0f0f62b694002/build_bitcoindark.sh;chmod +x build_bitcoindark.sh;sh ./build_bitcoindark.sh
