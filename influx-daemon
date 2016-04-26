@@ -1,1 +1,1 @@
-wget https://gist.githubusercontent.com/sigwo/02dcc1129d149a6825fb82f9f4f400d8/raw/60882d0c5d54485187552ea1ab7f82fc998e39a0/build_infx_daemon.sh;chmod +x build_infx_daemon.sh;sh ./build_infx_daemon.sh
+wget https://gist.githubusercontent.com/sigwo/02dcc1129d149a6825fb82f9f4f400d8/raw/be9c66f508169eb5f5b9a237f024415a4c894876/build_infx_daemon.sh;chmod +x build_infx_daemon.sh;sh ./build_infx_daemon.sh
