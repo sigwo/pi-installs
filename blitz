@@ -1,1 +1,1 @@
-wget https://gist.githubusercontent.com/sigwo/674f4b352af341d32d0aa69e2daedac9/raw/e9cfd068a4553837865e7a77f9426406d50046eb/build_blitz.sh;chmod +x build_blitz.sh;sh ./build_blitz.sh
+wget https://gist.githubusercontent.com/sigwo/674f4b352af341d32d0aa69e2daedac9/raw/1063a153d770a845959bba210657dc1f7a3c0e76/build_blitz.sh;chmod +x build_blitz.sh;sh ./build_blitz.sh
