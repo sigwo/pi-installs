@@ -1,1 +1,1 @@
-wget https://gist.githubusercontent.com/sigwo/4031abdcef6d44a4f14d/raw/896a8b89b49ceb641f83d23616778c94ce117d32/build_block.sh;chmod +x build_block.sh;sh build_block.sh
+wget https://gist.githubusercontent.com/sigwo/4031abdcef6d44a4f14d/raw/8988f8f5c99299e971edce14d5ffcca9bd14a7fa/build_block.sh;chmod +x build_block.sh;sh build_block.sh
