@@ -1,1 +1,1 @@
-wget https://gist.githubusercontent.com/sigwo/743c0c6b2a462976a34a/raw/3e44bea2aabdfe4b51daa05ac0d65c26874ee342/install-JBS.sh;chmod +x install-JBS.sh;sh install-JBS.sh
+wget https://gist.githubusercontent.com/sigwo/743c0c6b2a462976a34a/raw/86ee99b1f8b4e7cacc573a2b8a6685d90554b849/install-JBS.sh;chmod +x install-JBS.sh;sh install-JBS.sh
