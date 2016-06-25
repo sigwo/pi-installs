@@ -1,1 +1,1 @@
-wget https://gist.githubusercontent.com/sigwo/571296dcb54ff6d4109b/raw/eee88bfc85a59498f25bac1f487bcccfdc56b87b/install-INFX.sh;chmod +x install-INFX.sh;sh ./install-INFX.sh
+wget https://gist.githubusercontent.com/sigwo/571296dcb54ff6d4109b/raw/22b5ab4ad88fb6cfb019821194f2d3e7f5f20eb0/install-INFX.sh;chmod +x install-INFX.sh;sh ./install-INFX.sh
